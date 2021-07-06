@@ -32,12 +32,11 @@ form.addEventListener('submit', event => {
   }
 });
 
-//FAZENDO OS ITENS PERSISTIREM AO FECHAR O NAVEGADOR
-//Converte a array de itens para uma string JSON, e coloca isso dentro do storage do navegador
-localStorage.setItem('todoItemsRef', JSON.stringify(todoItems));
-
-
 function renderTodo(todo) {
+  //FAZENDO OS ITENS PERSISTIREM AO FECHAR O NAVEGADOR
+  //Converte a array de itens para uma string JSON, e coloca isso dentro do storage do navegador
+  localStorage.setItem('todoItemsRef', JSON.stringify(todoItems));
+
   const list = document.querySelector('.atividade-todo');
   const item = document.querySelector(`[data-key='${todo.id}']`);
 
