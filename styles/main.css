@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  background-color: #926CFF;
+  font-family: 'Mulish', sans-serif;
+}
+
+.logo {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.card {
+  max-width: 600px;
+  height: auto;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.116);
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ADICIONA */
+.adiciona {
+  margin-left: 64px;
+  margin-right: 64px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.add-action {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  align-items: center;
+}
+
+#adicionar {
+  justify-self: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 15px;
+  background-color: #926CFF;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.116);
+}
+
+#atividade {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.082);
+  height: 44px;
+}
+
+input[type='text'] {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+}
+
+input[type='text']::placeholder {
+  font-size: 16px;
+}
+
+hr {
+  width: 70%;
+  margin: auto;
+  opacity: 30%;
+}
+
+/*ATIVIDADES*/
+.atividades {
+  display: grid;
+  justify-items: center;
+  padding: 24px 36px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/*BUTTONS*/
+.excluir {
+  align-self: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 15px;
+  background-color: #FF3939;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.116);
+  margin-right: 8px;
+  background-image: url("../images/trash-can.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.done {
+  align-self: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 15px;
+  background-color: #29D326;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.116);
+  background-image: url("../images/check-mark.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.atividade-todo {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 16px;
+}
+
+.todo-item {
+  display: flex;
+  grid-template-columns: 70% 30%;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  align-self: center;
+}
+
+.atv-text {
+  padding: 16px;
+  align-self: center;
+  text-align: center;
+}
+
+.item-done {
+  text-decoration: line-through;
+}
+
+@media only screen and (min-width: 400px) {
+  .add-action {
+    grid-template-columns: 1fr 0.2fr;
+  }
+}
